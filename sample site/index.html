@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="total_messages">0</h1>
+    <hr />
+    <button onclick="message_patha()">Message Him</button>
+
+    <script>
+      let total_Messages = 10;
+      total_Messages = 998;
+
+      document.getElementById("total_messages").innerText = total_Messages;
+
+      function message_patha() {
+        total_Messages++;
+        if (total_Messages > 99) {
+          total_Messages = "99+";
+        }
+
+        document.getElementById("total_messages").innerText = total_Messages;
+      }
+    </script>
+  </body>
+</html>
