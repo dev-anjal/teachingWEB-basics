@@ -48,9 +48,9 @@
   <body o>
     <div class="container">
       <div class="anothercont">
-        <div class="suscessMessage">inserted suscessfully into her pp</div>
+        <div class="suscessMessage"></div>
         <div class="suscessMessage" style="transform: translateY(100px)">
-          inserted suscessfully into her pp
+          <div>Success</div>
         </div>
         <div>i am just here randomly</div>
       </div>
@@ -58,6 +58,14 @@
     <button onclick="add()">add</button>
     <script>
       function add() {
+        var card = document.querySelector(".suscessMessage");
+        card.style.right = "0";
+        card.style.backgroundColor = "pink";
+
+        setTimeout(() => {
+          card.style.right = "-100%";
+        }, 2000);
+      }
     </script>
   </body>
 </html>
